@@ -1,6 +1,6 @@
 ﻿namespace Pass4Win
 {
-    partial class frmMain
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.statusPass = new System.Windows.Forms.StatusStrip();
             this.statusTxt = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusPB = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripOffline = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.txtPassDetail = new System.Windows.Forms.RichTextBox();
             this.passDetailMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyPassDetailMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +60,6 @@
             this.toolStripUpdateButton = new System.Windows.Forms.ToolStripButton();
             this.TextDelay = new System.Windows.Forms.Timer(this.components);
             this.dirTreeView = new System.Windows.Forms.TreeView();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusPass.SuspendLayout();
             this.passDetailMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataPass)).BeginInit();
@@ -100,6 +100,11 @@
             this.toolStripOffline.Name = "toolStripOffline";
             this.toolStripOffline.Spring = true;
             this.toolStripOffline.Click += new System.EventHandler(this.toolStripOffline_Click);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             // 
             // txtPassDetail
             // 
@@ -296,7 +301,6 @@
             // 
             this.toolStripUpdateButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripUpdateButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripUpdateButton.Image = global::Pass4Win.Properties.Resources.refresh_16;
             resources.ApplyResources(this.toolStripUpdateButton, "toolStripUpdateButton");
             this.toolStripUpdateButton.Name = "toolStripUpdateButton";
             this.toolStripUpdateButton.Click += new System.EventHandler(this.toolStripUpdateButton_Click);
@@ -312,11 +316,6 @@
             this.dirTreeView.Name = "dirTreeView";
             this.dirTreeView.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.dirTreeView_NodeMouseDoubleClick);
             // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
-            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -329,7 +328,7 @@
             this.Controls.Add(this.statusPass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "frmMain";
+            this.Name = "FrmMain";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Resize += new System.EventHandler(this.frmMain_Resize);
             this.statusPass.ResumeLayout(false);
